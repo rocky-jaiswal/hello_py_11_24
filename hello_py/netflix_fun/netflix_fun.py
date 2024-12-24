@@ -30,6 +30,12 @@ def movies_with_gary_oldman():
     print(list(map(lambda m: m["title"], movies)))
 
 
+def indian_comedies():
+    indian_movies = list(filter(lambda d: d["country"] == "India", data))
+    movies = list(filter(lambda d: ("Comedies" in d["listed_in"]), indian_movies))
+    print(list(map(lambda m: m["title"], movies)))
+
+
 def indian_movies_with_johnny_lever():
     indian_movies = list(filter(lambda d: d["country"] == "India", data))
     movies = list(filter(lambda d: ("Johnny Lever" in d["cast"]), indian_movies))

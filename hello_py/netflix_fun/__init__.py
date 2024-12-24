@@ -16,6 +16,8 @@ def main():
             last()
         case "indian_movies":
             indian_movies()
+        case "indian_comedies":
+            indian_comedies()
         case "movies_with_gary_oldman":
             movies_with_gary_oldman()
         case "indian_movies_with_johnny_lever":

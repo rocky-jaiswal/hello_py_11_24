@@ -18,4 +18,4 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 hello = "hello_py.greeting:hello"
 netflix_print_csv = "hello_py.netflix_fun:print_csv"
-netflix_run = "hello_py.netflix_fun:main"
+netflix_fun = "hello_py.netflix_fun:main"
