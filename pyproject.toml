@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "hello-py"
+version = "0.1.0"
+description = ""
+authors = ["Rocky Jaiswal <rocky.jaiswal@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+hello = "hello_py.greeting:hello"
+netflix_print_csv = "hello_py.netflix_fun:print_csv"
+netflix_run = "hello_py.netflix_fun:main"
